@@ -4,6 +4,10 @@ A bar widget for [Noctalia](https://noctalia.dev) that shows what the
 [Hex](https://github.com/anomalyco/hex) dictation app is doing: ready, recording,
 recording a meeting, transcribing, preparing its speech model, listener off, or not running.
 
+| Ready | Recording |
+|---|---|
+| ![Hex ready: plain microphone next to the clock](screenshots/idle.png) | ![Hex recording: red filled microphone](screenshots/recording.png) |
+
 | State | Glyph |
 |---|---|
 | Ready | `microphone` |
