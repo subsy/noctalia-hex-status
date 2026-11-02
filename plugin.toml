@@ -1,0 +1,40 @@
+id = "subsy/hex-status"
+name = "Hex Status"
+version = "0.1.0"
+plugin_api = 32
+author = "subsy"
+license = "MIT"
+icon = "microphone"
+description = "Hex dictation status in the bar: idle, recording, transcribing, meeting, or not running."
+tags = ["audio", "bar", "indicator", "recording", "utility"]
+
+[[setting]]
+key = "poll_ms"
+type = "int"
+label_key = "settings.poll_ms.label"
+description_key = "settings.poll_ms.description"
+default = 300
+min = 100
+max = 5000
+
+# One poller for every bar instance; widgets read its result from noctalia.state.
+[[service]]
+id = "poller"
+entry = "service.luau"
+
+[[widget]]
+id = "status"
+entry = "widget.luau"
+
+  [widget.actions]
+  left   = "exec hex-toggle toggle"
+  middle = "exec hex dictation cancel"
+  right  = "exec hex window show"
+
+[[widget.setting]]
+key = "show_label"
+type = "bool"
+label_key = "settings.show_label.label"
+description_key = "settings.show_label.description"
+default = false
+

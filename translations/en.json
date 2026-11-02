@@ -1,0 +1,31 @@
+{
+  "settings.show_label.label": "Show state label",
+  "settings.show_label.description": "Show a word such as Recording next to the icon when Hex is not idle.",
+  "settings.poll_ms.label": "Poll interval (ms)",
+  "settings.poll_ms.description": "How often to ask Hex for its status. Lower reacts faster.",
+
+  "state.idle": "Ready",
+  "state.recording": "Recording",
+  "state.meeting": "Recording a meeting",
+  "state.working": "Transcribing",
+  "state.preparing": "Preparing the speech model",
+  "state.disabled": "Listener disabled",
+  "state.attention": "Needs attention",
+  "state.down": "Not running",
+  "state.missing": "hex is not installed",
+
+  "label.recording": "Recording",
+  "label.meeting": "Meeting",
+  "label.working": "Transcribing",
+  "label.preparing": "Model",
+  "label.disabled": "Off",
+  "label.attention": "Check Hex",
+  "label.down": "Not running",
+  "label.missing": "No Hex",
+
+  "tooltip.model": "Model",
+  "tooltip.meeting": "Meeting",
+  "tooltip.error": "Error",
+  "tooltip.update": "Update available",
+  "tooltip.actions": "Click: dictate · Middle: cancel · Right: open Hex"
+}
